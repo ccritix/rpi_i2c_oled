@@ -78,12 +78,13 @@ class HassioUtils(Utils):
     @staticmethod
     def get_hostname(opt = ""):
         host_info = HassioUtils.hassos_get_info('host/info')
+	Utils.logger.info("Host info: '"+ host_info )
         return host_info['data']['hostname'].upper()
 
     @staticmethod
     def get_ip():
         network_info = HassioUtils.hassos_get_info('network/info')
-        Utils.logger.info("Network info: '"+ network_info )
+        Utils.logger.info("Network info: "+ network_info )
         return network_info['data']['interfaces'][1]['ipv4']['address'][0].split("/")[0]
 
     @staticmethod
