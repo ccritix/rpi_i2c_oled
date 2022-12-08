@@ -83,7 +83,7 @@ class HassioUtils(Utils):
     @staticmethod
     def get_ip():
         network_info = HassioUtils.hassos_get_info('network/info')
-        return network_info['data']['interfaces'][0]['ipv4']['address'][0].split("/")[0]
+        return network_info['data']['interfaces'][1]['ipv4']['address'][0].split("/")[0]
 
     @staticmethod
     def compile_text(text, additional_replacements = {}):
