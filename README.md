@@ -69,7 +69,7 @@ This repository has been broken out to work as a standalone service and will wor
 
 Any screens which are dependent on Home Assistant (e.g. ```Splash```) will be automatically disabled
 
-Home Assistant variant of this build can be accessed from [HomeAssistant_Addons](https://github.com/crismc/homeassistant_addons)
+Home Assistant variant of this build can be accessed from [HomeAssistant_Addons](https://github.com/ccritix/homeassistant_addons)
 <br>
 <br>
 
@@ -98,7 +98,7 @@ One-Step Automated Install
 ----------------
 Those who want to get started quickly and conveniently may install the RPI_I2C_OLED using the following command:
 ```
-curl -sSL https://raw.githubusercontent.com/crismc/rpi_i2c_oled/v1.0.2/basic-install.sh | sudo bash
+curl -sSL https://raw.githubusercontent.com/ccritix/rpi_i2c_oled/v1.0.2/basic-install.sh | sudo bash
 ```
 
 This will download the latest release, and install it as a service. Once run, you can control the ```oled``` service by the following:
@@ -127,7 +127,7 @@ sudo apt-get install python3-dev python3-smbus python3-pil
 
 Checkout this code
 ```
-git clone git@github.com:crismc/rpi_i2c_oled.git
+git clone git@github.com:ccritix/rpi_i2c_oled.git
 cd rpi_i2c_oled
 ```
 
@@ -275,9 +275,9 @@ Written by Tony DiCola for Adafruit Industries.
 MIT license, all text above must be included in any redistribution
 
 <!-- References -->
-[release-badge]: https://img.shields.io/github/v/release/crismc/rpi_i2c_oled?style=flat-square
-[downloads-badge]: https://img.shields.io/github/downloads/crismc/rpi_i2c_oled/total?style=flat-square
-[release-url]: https://github.com/crismc/rpi_i2c_oled/releases
+[release-badge]: https://img.shields.io/github/v/release/ccritix/rpi_i2c_oled?style=flat-square
+[downloads-badge]: https://img.shields.io/github/downloads/ccritix/rpi_i2c_oled/total?style=flat-square
+[release-url]: https://github.com/ccritix/rpi_i2c_oled/releases
 [welcome-url]: /img/examples/welcome.png?raw=true
 [cpu-stats-url]: /img/examples/cpu.png?raw=true
 [ram-stats-url]: /img/examples/memory.png?raw=true

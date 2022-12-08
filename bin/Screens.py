@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 import time
 import logging
 import textwrap
-from bin.SSD1306 import SSD1306_128_32 as SSD1306
+from bin.SSD1306 import SSD1306_128_64 as SSD1306
 from bin.Scroller import Scroller
 from bin.Utils import Utils
 class Display:
