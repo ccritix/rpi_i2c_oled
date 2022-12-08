@@ -78,7 +78,7 @@ class HassioUtils(Utils):
     @staticmethod
     def get_hostname(opt = ""):
         host_info = HassioUtils.hassos_get_info('host/info')
-	Utils.logger.info("Host info: '"+ host_info )
+	Utils.logger.info("Host info: '"+ host_info['data']['hostname'].upper())
         return host_info['data']['hostname'].upper()
 
     @staticmethod
