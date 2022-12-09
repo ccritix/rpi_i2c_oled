@@ -38,7 +38,7 @@ class Utils:
     @staticmethod
     def get_ip():
 	network_info = HassioUtils.hassos_get_info('network/info')
-        Utils.logger.info("Network info: "+ network_info )
+        Utils.logger.info("Network info: "+ network_info['data']['interfaces'][1]['ipv4']['address'][0].split("/")[0] )
         return network_info['data']['interfaces'][1]['ipv4']['address'][0].split("/")[0]
 
     def get_datetime(format = None):
@@ -86,7 +86,7 @@ class HassioUtils(Utils):
     @staticmethod
     def get_ip():
         network_info = HassioUtils.hassos_get_info('network/info')
-        Utils.logger.info("Network info: "+ network_info )
+        Utils.logger.info("Network info: "+ network_info['data']['interfaces'][1]['ipv4']['address'][0].split("/")[0] )
         return network_info['data']['interfaces'][1]['ipv4']['address'][0].split("/")[0]
 
     @staticmethod
